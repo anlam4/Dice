@@ -1,10 +1,18 @@
+int x;
+int y;
 void setup()
 {
 	noLoop();
 }
 void draw()
 {
-	//your code here
+	for()
+  {
+    for()
+    {
+      Die name = new Die(x,y);
+    }
+  }
 }
 void mousePressed()
 {
