@@ -1,5 +1,6 @@
 void setup()
 {
+	background(64,217,36);  //green
 	size(600,600);
 	noLoop();
 }
@@ -18,6 +19,7 @@ void draw()
     	   }
   	}
 	
+	fill(255,0,0);
 	text("");  //Displays total of all the dice
 }
 void mousePressed()
@@ -36,7 +38,10 @@ class Die  //Models one single die
 	}
 	void show()
 	{
+		fill(239,228,176);  //Changes color of squares to cream
 		rect(myX,myY,60,60);  //Draws squares
+		
+		fill(0);  //Changes color of dots to black
 		
 		//Worth sacrificing simplicity to avoid rewriting ellipse()?
 		//Draws dots
