@@ -1,7 +1,7 @@
 void setup()
 {
 	background(64,217,36);  //green
-	size(600,600);
+	size(600,700);
 	noLoop();
 }
 void draw()
@@ -19,8 +19,9 @@ void draw()
     	   }
   	}
 	
+	textSize(30);
 	fill(255,0,0);
-	text("");  //Displays total of all the dice
+	text("Total of all the dice: " + counter,250,635);
 }
 void mousePressed()
 {
