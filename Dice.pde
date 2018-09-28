@@ -21,7 +21,7 @@ void draw()
 	
 	textSize(30);
 	fill(255,0,0);
-	text("Total of all the dice: " + counter,250,635);
+	text("Total of all the dice: " + counter,250,700);
 }
 void mousePressed()
 {
