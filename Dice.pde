@@ -1,17 +1,17 @@
 void setup()
 {
-	background(64,217,36);  //green
 	size(600,700);
 	noLoop();
 }
 void draw()
 {
+	background(64,217,36);  //Covers previous drawing
 	int counter = 0;  //Resets counter for each click
 	
 	//Gives 100 dice
-	for(y = 0; y <= 600; y +=60)  //rows
+	for(y = 0; y < 600; y +=60)  //rows
   	{
-    	   for(x = 0; x <= 600; x +=60)  //columns
+    	   for(x = 0; x < 600; x +=60)  //columns
     	   {
 	   	Die name = new Die(x,y);
 		name.show();
@@ -21,7 +21,7 @@ void draw()
 	
 	textSize(30);
 	fill(255,0,0);
-	text("Total of all the dice: " + counter,250,700);
+	text("Total of all the dice: " + counter,250,635);
 }
 void mousePressed()
 {
